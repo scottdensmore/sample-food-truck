@@ -5,7 +5,7 @@ Abstract:
 Defines the live activity attributes.
 */
 
-#if canImport(ActivityKit)
+#if canImport(ActivityKit) && os(iOS)
 import Foundation
 import ActivityKit
 import FoodTruckKit
