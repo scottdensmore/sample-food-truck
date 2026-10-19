@@ -265,3 +265,10 @@ Task {
     }
 }
 ```
+
+
+## Continuous integration
+
+The Build workflow compiles both Food Truck and Food Truck All in Debug and Release for iOS Simulator and macOS, including embedded widgets and the local FoodTruckKit package. It uses the runner's existing Xcode and SDKs; all builds are unsigned and need no developer account. No tools or simulator runtimes are installed.
+
+This is build validation only. No implemented test targets exist (the FoodTruckKit scheme references a removed template test target). CI does not launch the apps, call WeatherKit, configure passkeys or associated domains, perform purchases, or start Live Activities. Project settings, entitlements, service configuration and application code remain unchanged.
